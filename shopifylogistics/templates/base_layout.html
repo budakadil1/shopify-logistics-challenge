@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>The Amazing Logistics Company</title>
+    <meta
+      name="description"
+      content="Logistics company project submitted for Shopify!"
+    />
+    <meta name="author" content="SitePoint" />
+
+    <meta property="og:title" content="The Amazing Logistics Company" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Logistics company project submitted for Shopify!"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a href="{% url 'index' %}" class="text-white h3"
+        >The Amazing Logistics Company</a
+      >
+    </nav>
+    <div class="container">{% block content %} {% endblock %}</div>
+  </body>
+</html>

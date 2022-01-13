@@ -1,0 +1,13 @@
+{% extends 'base_layout.html' %} {% block content %} {% if exception %}
+<h1>An unknown exception occured.</h1>
+{% endif %} {% if notfound %}
+<h1>This inventory is not found.</h1>
+{% endif %} {% if form %}
+<form class="form-horizontal mt-4" method="post">
+  {% csrf_token %} {% for field in form %}
+  <p class="text-dark h5">{{field.label}}</p>
+  <p class="text-dark h4">{{field}}</p>
+  {% endfor %}
+  <button type="submit" class="btn btn-primary" name="">Save Inventory</button>
+</form>
+{% endif %} {% endblock %}
