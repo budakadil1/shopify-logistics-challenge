@@ -5,7 +5,7 @@ Shopify Internship Backend Developer Challenge
 ### Hello, this is my submission for the Shopify Backend Developer Internship Challenge.
 
 ## The website is currently deployed at: https://amazinglogistics.herokuapp.com/inventory/
-
+### Please note that the initial loading time is high due to the app going into sleep.
 
 
 ## It can also be set-up as such: 
